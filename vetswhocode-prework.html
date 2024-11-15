@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First JavaScript Code</title>
+    </head>
+    <body>
+        <button onclick="showMessage()">Click me</button>
+        <p id="message"></p>
+        <script>
+            function showMessage() {
+                document.getElementbyId("message").innerHTML = "hello, world";
+            }
+        </script>
+        var name = "john";
+        let age = 25;
+        const pi = 3.14;
+
+        function greet(name) {
+            console.log("hello," + name + "!");
+        }
+        greet("Alice");
+
+let score = 85;
+
+if (score >= 90) {
+    console.log("A Grade");
+} else if (score >= 80) {
+    console.log("B Grade");
+} else {
+    console.log("C or Lower");
+}
+
+for (let i = 0 < 5; i++) {
+    console.log("Count: " + i);
+}
+let count = 0;
+while (count < 3) {
+    console.log("Looping...");
+    count++;
+}
+
+let x= 5;
+let y = 10;
+let sum = x + y; //15
+let difference = y - x; //5
+let product = x* y; //50
+let quotient = y / x; //2
+
+// Create the object
+
+const person = {
+    name: "jody",
+    age: 30,
+    gender:"male",
+    sayHello: Function () {
+        console.log("Hello!");
+    },
+};
+
+console.log(person.name)
+console.log(person["age"]);
+
+<person class="sayhello">
+    person.age = 35;
+    person.job = "developer";
+
+    delete person.gender;
+
+    console.log (person.gender);
+</person>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <button onclick="showMessage()">Click me</button>
+    <p id="message"></p>
+</body>
+</html>
+
+function showMessage() {
+    document.getElementbyId("message").innerHTML = "Hello, World!";
+}
